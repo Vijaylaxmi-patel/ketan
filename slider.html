@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horigental scroll gallery</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+        }
+        .gallery{
+            width:900px;
+            display:flex;
+            overflow-x:scroll;
+        }
+        .gallery div{
+            width:100%;
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-gap:20px;
+            padding:10px;
+            flex:none;
+        }
+        .gallery div img{
+            width:100%;
+            filter:grayscale(100%);
+            transition:transform 0.5s;
+        }
+        .gallery::-webkit-scrollbar{
+            display: none;
+        }
+        .gallery-wrap{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            margin:10%;
+        }
+        #backBtn, #nextBtn{
+            width:50px;
+            cursor: pointer;
+            margin:40px;
+        }
+        .gallery div img:hover{
+            filter:grayscale(0);
+            cursor:pointer;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img id="backBtn" src="data:image/png;base64,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" alt="">
+    
+    <div class="gallery">
+        <div>
+        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L2D0PDa04vSPiB6ZX69EpHnHx6kJ9kdEL1hckzyGLA&s" alt=""></span>
+        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L2D0PDa04vSPiB6ZX69EpHnHx6kJ9kdEL1hckzyGLA&s" alt=""></span>
+        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L2D0PDa04vSPiB6ZX69EpHnHx6kJ9kdEL1hckzyGLA&s" alt=""></span>
+        </div>
+        <div>
+        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L2D0PDa04vSPiB6ZX69EpHnHx6kJ9kdEL1hckzyGLA&s" alt=""></span>
+        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L2D0PDa04vSPiB6ZX69EpHnHx6kJ9kdEL1hckzyGLA&s" alt=""></span>
+        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L2D0PDa04vSPiB6ZX69EpHnHx6kJ9kdEL1hckzyGLA&s" alt=""></span>
+        </div>
+    </div>
+    <img id="nextBtn" src="data:image/png;base64,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" alt="">
+</div>
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBbtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) =>{
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click", ()>={
+        scrollContainer.style.scrollBehavior = "smooth";
+    });
+</script>
+</body>
+</html>
