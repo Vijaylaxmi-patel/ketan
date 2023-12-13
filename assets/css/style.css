@@ -167,9 +167,11 @@ h3{
 }
 .navbar .nav-link{
     color:#1a1b1a;
+    text-shadow: 1px  #333;
 }
 .navbar .nav-item li a:hover, .nav-link:hover{
     color:#ea512e;
+    background:#fff;
 }
 .navbar .container{
     padding:3px 0;
@@ -179,6 +181,15 @@ h3{
 }
 .navbar .navbar-brand img{
     width:100%;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    width: 250px;
+    padding:20px;
+    top:50px;
+    line-height: 2rem;
+    font-size: 18px;
+    text-shadow: 1px #333;
 }
 
 /* header section end  */
@@ -760,9 +771,11 @@ footer .gallery div:hover img{
         grid-auto-columns: calc((100%) );
     }
   }
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
+  @media screen and (max-width: 380px) {
+    .wrapper {
+        max-width: 400px;
+        overflow: hidden;
     }
-  }
+    }
+  
 /* media query end  */
