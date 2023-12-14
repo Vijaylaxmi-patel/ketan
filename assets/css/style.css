@@ -665,20 +665,28 @@ footer .heading::before {
     width: 50px;
     background-color: #ea512e;
 }
-
-footer .social-icon li a{
-    background-color: #ea512e;
+footer .social-icon li{
+    margin:0 5px;
+}
+footer .social-icon li .social-icons{
     color:#fff;
-    margin-right:5px;
-    height:35px;
-    width:35px;
-    padding:6px 14px;
-    text-align: center;
+    transition:0.5s;
+}
+footer .social-icon li a{
+    position:relative;
+    display:block;
+    width:30px;
+    height:30px;
     border-radius:50%;
-    transition:0.5s all;
+    background-color: #ea512e;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.5s;
 }
 footer .social-icon li a:hover{
     background-color: #F5890D;
+    transform: translate(0,-10px);
+
 }
 footer .links a{
 color:#fff;
@@ -776,6 +784,31 @@ footer .gallery div:hover img{
         max-width: 400px;
         overflow: hidden;
     }
+    .event{
+        padding: 20px;
+    }
+    .item {
+        display: inline-block;
+        width: 220px;
+    }
     }
   
 /* media query end  */
+
+/* teacher page start  */
+/* teacher banner start  */
+.teacher-banner{
+    width:100%;
+    background:url(../images/teacher-banner.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 70px;
+    padding-bottom: 70px 
+}
+.teacher-banner .col{
+    display: block;
+    margin: auto !important;
+}
+/* teacher banner end  */
+/* teacher page end  */
