@@ -919,10 +919,23 @@ i {
     }
     .carousel .item .card {
         background-color: #FDF6ED;
-        margin: 30px;
+        margin: 5px;
+    }
+    .item .card p {
+        font-style: normal;
+        font-size: 12px;
+    }
+    .item .card h4 {
+        font-size: 16px;
+    }
+    .default-btn,.default-btn2{
+        font-size: 14px;
     }
     .buttons {
         display: none!important;
+    }
+    .clound-img{
+        display:none;
     }
     }
   
