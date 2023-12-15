@@ -725,8 +725,68 @@ footer .gallery div:hover img{
     transform: scale(1.1);
     opacity: 0.3;
 }
-
-
+ 
+.go-top i {
+    position: absolute;
+    /* right: 0;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bx {
+    font-family: boxicons!important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    /* speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+i {
+    line-height: normal;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+i {
+    font-style: italic;
+}
+.go-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+}
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: -100px;
+    right: 20px;
+    color: #ffffff;
+    background-color: #1b0238;
+    z-index: 4;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    font-size: 22px;
+    -webkit-transition: .9s;
+    transition: .9s;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
 /* .footer section end  */
 
 @keyframes border-transform-default{
@@ -779,7 +839,55 @@ footer .gallery div:hover img{
         grid-auto-columns: calc((100%) );
     }
   }
+  @media screen and (max-width: 575px){
+    .banner .col-md-6 {
+        text-align: center;
+    }
+    .banner-content.mt-15 {
+        margin-top: 50px;
+    }
+    .banner h1 {
+        font-size: 32px;}
+    footer{
+        padding:50px 0;
+    }
+    .banner .girl-image{
+        padding-left: 0;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .popular .card {
+        margin-bottom: 20px;
+    }
+    .popular {
+        padding: 20px 0px;
+    }
+    .teacher .py-5 {
+        padding-top: 2rem!important;
+        padding-bottom: 1rem!important;
+    }  
+    .teacher .cards{
+        margin-bottom:30px;
+    }
+    .value .span{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        }  
+        .value h2{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        footer .social-icon{
+            margin-bottom: 30px 
+        }
+
+  }
   @media screen and (max-width: 380px) {
+    .banner h1 {
+        font-size: 22px;
+    }
     .wrapper {
         max-width: 400px;
         overflow: hidden;
@@ -790,6 +898,31 @@ footer .gallery div:hover img{
     .item {
         display: inline-block;
         width: 220px;
+    }
+    
+    .banner-content.mt-15 {
+        margin-top: 50px;
+    }
+    
+    h3 {
+        font-size: 45px;
+    }
+    .who-we-are-content span {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .popular {
+        padding: 0;
+    }
+    .card.overflow-hidden {
+        margin-bottom: 20px;
+    }
+    .carousel .item .card {
+        background-color: #FDF6ED;
+        margin: 30px;
+    }
+    .buttons {
+        display: none!important;
     }
     }
   
