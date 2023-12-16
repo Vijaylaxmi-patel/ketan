@@ -202,7 +202,7 @@ background:url(../images/main-banner-bg.jpg);
 background-size: cover;
 background-position:center center;
 }
-.banner .buy-button{
+ .buy-button{
     right: 30px;
     z-index: 99;
     top: 50%;
@@ -757,7 +757,7 @@ i {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
+/* user agent stylesheet  */
 i {
     font-style: italic;
 }
@@ -941,20 +941,81 @@ i {
   
 /* media query end  */
 
-/* teacher page start  */
-/* teacher banner start  */
-.teacher-banner{
+/* ---about page start --- */
+/* banner section start  */
+.about-banner{
     width:100%;
-    background:url(../images/teacher-banner.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/page-banner-1.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-position: center center;
-    padding-top: 70px;
-    padding-bottom: 70px 
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-attachment: fixed;
 }
-.teacher-banner .col{
-    display: block;
-    margin: auto !important;
+.fun{
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/fun-facts-bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-attachment: fixed;
 }
+.fun .card{
+    padding:200px;
+    opacity: .8;
+}
+.about-cards{
+    height:350px;
+    width:360px;
+}
+.about-cards img{
+    width: 100%;
+    border-radius: 3%;
+}
+/* banner section end  */
+
+/* ----about page end----  */
+
+/* teacher page start  */
+/* ---teacher banner start----  */
+.teacher-banner{
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher-banner.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-attachment: fixed;
+}
+
 /* teacher banner end  */
-/* teacher page end  */
+/* ---teacher page end----  */
+
+/* teacherdetails page start  */
+.teacher-details{
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/teacher-details-banner.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-attachment: fixed;
+}
+.personal-details{
+    background-color: #FFFFFF;
+}
+ .card .card-header h2::before{
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: -16px;
+    width: 190px ;
+    height: 1px;
+    background-color: #ea512e;
+}
+/* ------ teacherdetails page end ------  */
