@@ -161,6 +161,13 @@ h3{
 /* reuseable code end */
 
 /* header section start  */
+.navbar{
+        width:100%;
+        position: fixed!important;
+        z-index: 9;
+        background: #fff;
+    }
+
  .navbar .nav-item {
    font-size:18px;
    margin-right:6px; 
@@ -196,6 +203,7 @@ h3{
 
 /* banner section start  */
 .banner{
+top: 100px;
 width:100%;
 height:auto;
 background:url(../images/main-banner-bg.jpg);
@@ -824,11 +832,18 @@ i {
     .testimonial .wrapper .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
     }
-  }
-  @media screen and (max-width: 767px) {
     .banner .shape-1, .banner .shape-2,.banner .shape-3,.banner .shape-4,.who-we-are-shape {
         display:none;
     }
+    .banner-content.mt-15 {
+        margin-top: 70px;
+    }
+    .banner .girl-image{
+        padding-top: 70px;
+    }
+    
+  }
+  @media screen and (max-width: 767px) {
     .banner-content.mt-15 {
         margin-top: 100px;
     }
@@ -854,6 +869,11 @@ i {
     .banner .girl-image{
         padding-left: 0;
     }
+    .d-flex.mt-2.mb-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     h3 {
         font-size: 22px;
     }
@@ -862,6 +882,9 @@ i {
     }
     .popular {
         padding: 20px 0px;
+    }
+    .event{
+        padding:50px;
     }
     .teacher .py-5 {
         padding-top: 2rem!important;
