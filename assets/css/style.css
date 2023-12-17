@@ -189,7 +189,7 @@ h3{
 .navbar .navbar-brand img{
     width:100%;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu {
+.navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
     width: 250px;
     padding:20px;
@@ -964,7 +964,7 @@ i {
   
 /* media query end  */
 
-/* ---about page start --- */
+/* --------about page start --- */
 /* banner section start  */
 .about-banner{
     width:100%;
@@ -976,6 +976,8 @@ i {
     padding-bottom: 200px;
     background-attachment: fixed;
 }
+/* banner section end  */
+/* fun section start  */
 .fun{
     width:100%;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/fun-facts-bg.jpg);
@@ -990,17 +992,199 @@ i {
     padding:200px;
     opacity: .8;
 }
-.about-cards{
+/* fun section end */
+/* Expert section start  */
+.expert .card{
+    width:350px;
     height:350px;
-    width:360px;
+    object-fit: contain;
 }
-.about-cards img{
-    width: 100%;
-    border-radius: 3%;
+.expert .card ul li a{
+    color:#ea512e !important;
+    background-color: #fff;
+    padding:10px 18px;
+    border-radius: 50%;
+    font-size: 16px;
 }
-/* banner section end  */
+.expert .card ul li a:hover{
+    color:#fff !important;
+    background-color: #F5890D;
+    transition: 0.3s linear;
+}
+.expert .card .card-img-overlay{
+    background-color: #333;
+    opacity:0;
+}
+.expert .card .card-img-overlay:hover{
+    opacity:.8;
+    transition:0.8s ease-in-out;
+}
+/* expert section end  */
+/* get-quote section start  */
+  .get-quote{
+    width:100%;
+    background:url(../images/quote-bg.jpg);
+    background-size: cover;
+    background-position:center center;
+    padding:100px;
+   }
+   .get-quote .row{
+    background-color: #fff;
+    padding: 40px;
+    margin-left: 180px;
+   }
+    .get-quote span{
+    color:#ea512e;
+    font-family: 'Catamaran',sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-weight: bold;
+   } 
+/* get-quote section end  */
+
+/* courses section start  */
+
+.choose-img-shape .shape-1{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    animation:moveleft linear 3s infinite;
+    animation-direction: alternate;
+}
+@keyframes moveleft {
+    0%{margin-left: 0;}
+    100%{ margin-left:50px;}
+}
+.choose-img-shape .shape-2{
+    position:absolute;
+    top:50%;
+    right:-10%;
+    z-index:-1;
+    animation:moveright linear 3s infinite;
+    animation-direction: alternate;
+}
+@keyframes moveright{
+    0%{right:-10%;}
+    100%{right:-12%;}
+}
+.choose-img-shape .shape-3{
+    position:absolute;
+    bottom:10%;
+    left:12%;
+    z-index: -1;
+    animation:moveleft2 linear 3s infinite;
+    animation-direction: alternate;
+}
+@keyframes moveleft2 {
+    0%{left: 12%;}
+    100%{left:13%;}
+}
+/* courses section end  */
+/* pricing section start  */
+.pricing span {
+    font-size: 20px;
+    color: #ea512e;
+    font-weight: 600;
+    font-family: "Sacramento", cursive;
+}
+.pricing table th,.pricing table td{
+    font-size:25px;
+    padding:30px;
+}
+.pricing table td{
+    color:#777;
+}
+/* pricing section end  */
+
+/* newsletter section start  */
+.newsletter{
+    background:#FDEEE9;
+    z-index: 1;
+    position:relative;
+}
+.newsletter .shape-1{
+    position: absolute;
+    left: 0;
+    top: 24%;
+    /* transform: translateY(-60%); */
+    max-width: 250px;
+    z-index: -1;
+}
+.newsletter .shape-2{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    max-width: 250px;
+    z-index: -1;
+}
+/* newsletter section end  */
+
+/* about page media query start */
+@media screen and (max-width:991px){
+    .get-quote .row{
+        margin-left: 0px;
+       }
+}
+@media screen and (max-width:767px){
+    .pricing table th, .pricing table td {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:575px){
+    .get-quote{
+        padding:10px;
+       }
+       .pricing table th, .pricing table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+/* about page media query end */
 
 /* ----about page end----  */
+
+/* ----event page start --- */
+  /* event banner start  */
+.event-banner{
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/event-banner-4.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.event-area .content-box{
+    background-color: #FDEEE9;
+    padding:10px;
+    border-radius: 10px;
+}
+.event-area .btn{
+    background-color:#FCDED3;
+    font-size: 20px;
+    font-weight: 600;
+}
+  /* event banner end  */
+/*----- event page end ---- */
+
+/* -----event details page start ------ */
+ /* event details banner start  */
+ .event-details-banner{
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/event-banner-4.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-attachment: fixed;
+ }
+ /* event details banner end  */
+/* -----event details page end ------ */
 
 /* teacher page start  */
 /* ---teacher banner start----  */
@@ -1016,7 +1200,7 @@ i {
 }
 
 /* teacher banner end  */
-/* ---teacher page end----  */
+/* --- teacher page end ----  */
 
 /* teacherdetails page start  */
 .teacher-details{
@@ -1041,4 +1225,4 @@ i {
     height: 1px;
     background-color: #ea512e;
 }
-/* ------ teacherdetails page end ------  */
+/* ------ teacherdetails page end ------ */
